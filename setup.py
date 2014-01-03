@@ -24,7 +24,7 @@ setup(
     long_description=readme + '\n\n' + history,
     author='Yaser Alraddadi',
     author_email='yaser@yr.sa',
-    url='https://github.com/gam_phon/tweetrssfeed',
+    url='https://github.com/gam-phon/tweetrssfeed',
     packages=[
         'tweetrssfeed',
     ],
