@@ -110,8 +110,12 @@ def tweet_rss(username, url, short=False, fetch=False, all=False):
     conn.commit()
 
 
-if __name__ == '__main__':
+def main():
     arguments = docopt(__doc__, version='Tweet RSS Feed 0.1')
     print(arguments)
     for url in arguments['<urls>']:
         tweet_rss(arguments['<username>'], url, short=arguments['--short'], fetch=arguments['--fetch'], all=arguments['--all'])
+
+
+if __name__ == '__main__':
+    main()

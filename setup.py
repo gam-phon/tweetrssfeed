@@ -19,7 +19,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='tweetrssfeed',
-    version='0.1.0',
+    version='0.1.2',
     description='Tweet RSS Feeds',
     long_description=readme + '\n\n' + history,
     author='Yaser Alraddadi',
@@ -31,10 +31,14 @@ setup(
     package_dir={'tweetrssfeed': 'tweetrssfeed'},
     include_package_data=True,
     install_requires=[
+        'tweepy==2.1',
+        'feedparser==5.1.3',
+        'bitly-api==0.3',
     ],
     license="BSD",
     zip_safe=False,
-    keywords='tweetrssfeed',
+    keywords='tweetrssfeed twitter rss',
+    entry_points={'console_scripts': ["tweetrssfeed = tweetrssfeed:main"]},
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
