@@ -19,7 +19,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='tweetrssfeed',
-    version='0.1.4',
+    version='0.1.5',
     description='Tweet RSS Feeds',
     long_description=readme + '\n\n' + history,
     author='Yaser Alraddadi',
@@ -34,6 +34,7 @@ setup(
         'tweepy==2.1',
         'feedparser==5.1.3',
         'bitly-api==0.3',
+        'docopt==0.6.1',
     ],
     license="BSD",
     zip_safe=False,
