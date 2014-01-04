@@ -2,13 +2,13 @@
 Usage
 ========
 
-To use Tweet RSS Feed in a project. First export your access tokens in your environments for your twitter and bitly account. For example my twiiter account is "gam-phon"::
+To use Tweet RSS Feed in a project. First export your access tokens in your environments for your twitter and bitly account. For example my twiiter account is "Gam_Phon"::
 
-    export gam-phon_BITLY_ACCESS_TOKEN=""
-    export gam-phon_TWITTER_CONSUMER_KEY=""
-    export gam-phon_TWITTER_CONSUMER_SECRET=""
-    export gam-phon_TWITTER_ACCESS_TOKEN=""
-    export gam-phon_TWITTER_ACCESS_TOKEN_SECRET=""
+    export Gam_Phon_BITLY_ACCESS_TOKEN=""
+    export Gam_Phon_TWITTER_CONSUMER_KEY=""
+    export Gam_Phon_TWITTER_CONSUMER_SECRET=""
+    export Gam_Phon_TWITTER_ACCESS_TOKEN=""
+    export Gam_Phon_TWITTER_ACCESS_TOKEN_SECRET=""
 
 Then::
 
@@ -18,11 +18,11 @@ Then::
 For cron job::
 
     #set virtual environments 
-    gam-phon_BITLY_ACCESS_TOKEN=""
-    gam-phon_TWITTER_CONSUMER_KEY=""
-    gam-phon_TWITTER_CONSUMER_SECRET=""
-    gam-phon_TWITTER_ACCESS_TOKEN=""
-    gam-phon_TWITTER_ACCESS_TOKEN_SECRET=""
+    Gam_Phon_BITLY_ACCESS_TOKEN=""
+    Gam_Phon_TWITTER_CONSUMER_KEY=""
+    Gam_Phon_TWITTER_CONSUMER_SECRET=""
+    Gam_Phon_TWITTER_ACCESS_TOKEN=""
+    Gam_Phon_TWITTER_ACCESS_TOKEN_SECRET=""
     * * * * * path/to/env/python path/to/tweetrssfeed.py
 
 
