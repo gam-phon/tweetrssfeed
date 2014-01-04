@@ -3,11 +3,11 @@
 """Tweet RSS Feed.
 
 Usage:
-  tweetrssfeed.py [--all] [--short] <username> <urls>...
-  tweetrssfeed.py [--fetch] <username> <urls>...
-  tweetrssfeed.py --short <username> <urls>...
-  tweetrssfeed.py (-h | --help)
-  tweetrssfeed.py --version
+  tweetrssfeed [--all] [--short] <username> <urls>...
+  tweetrssfeed [--fetch] <username> <urls>...
+  tweetrssfeed --short <username> <urls>...
+  tweetrssfeed (-h | --help)
+  tweetrssfeed --version
 
 Options:
   -h --help     Show this screen.
@@ -29,7 +29,6 @@ __version__ = '0.1.0'
 
 def main():
     arguments = docopt(__doc__, version='Tweet RSS Feed 0.1')
-    print(arguments)
     for url in arguments['<urls>']:
         tweet_rss(arguments['<username>'], url, short=arguments['--short'], fetch=arguments['--fetch'], all=arguments['--all'])
 
